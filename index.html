@@ -36,7 +36,7 @@ html[lang="ar"] body{font-family:"Noto Naskh Arabic","DM Sans",sans-serif}
 .language-switch button[aria-pressed="true"]{background:var(--espresso);color:white}
 .language-switch button:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
 html[dir="rtl"] .hero-copy{text-align:right}
-html[dir="rtl"] .hero-detail{right:auto;left:28px}
+html[dir="rtl"] .hero-detail-frame{right:auto;left:28px}
 html[dir="rtl"] .hero-logo{left:auto;right:28px}
 html[dir="rtl"] .hero-logo .english-word{direction:ltr}
 .menu-toggle{display:none;border:1px solid rgba(53,33,23,.2);background:transparent;width:42px;height:42px;border-radius:50%;cursor:pointer;align-items:center;justify-content:center;flex-direction:column;gap:4px;padding:0}
@@ -54,7 +54,8 @@ html[dir="rtl"] .hero-logo .english-word{direction:ltr}
 .btn.dark{background:var(--espresso);color:white}
 .btn.light{background:transparent}
 .hero-photo{min-height:650px;background-image:url("sukoon-hero.webp");background-size:cover;background-position:center;position:relative;overflow:hidden}
-.hero-detail{position:absolute;top:28px;right:28px;width:44%;aspect-ratio:1.1;object-fit:cover;border:7px solid var(--paper);box-shadow:0 12px 30px rgba(48,31,20,.2);z-index:1}
+.hero-detail-frame{position:absolute;top:28px;right:28px;width:34%;aspect-ratio:1;border:7px solid var(--paper);box-shadow:0 12px 30px rgba(48,31,20,.2);z-index:1;overflow:hidden}
+.hero-detail{display:block;width:100%;height:100%;object-fit:cover}
 .hero-logo{display:flex;flex-direction:column;align-items:center;justify-content:center;position:absolute;left:28px;bottom:28px;width:48%;min-height:0;text-align:center;color:var(--espresso);padding:14px 10px 11px;background:rgba(255,253,248,.94);box-shadow:0 8px 24px rgba(48,31,20,.14);z-index:2}
 .hero-logo .arabic-word{font-family:"Noto Naskh Arabic",serif;font-size:clamp(3.2rem,5vw,6.4rem);font-weight:700;line-height:.86;letter-spacing:-2px;margin:0}
 .hero-logo .english-word{font-family:"Cormorant Garamond",serif;font-size:clamp(2.6rem,4vw,5.6rem);font-weight:700;line-height:.82;letter-spacing:2px;margin:0}
@@ -128,7 +129,7 @@ html[dir="rtl"] .hero-logo .english-word{direction:ltr}
  .navlinks{display:none}.menu-toggle{display:flex}
  .mobile-nav{position:absolute;top:68px;left:0;right:0;background:var(--paper);border-bottom:1px solid #eadfce;padding:14px 20px;flex-direction:column;gap:0}
  .mobile-nav.open{display:flex}.mobile-nav a{padding:12px 2px;text-decoration:none;font-size:12px;font-weight:600;letter-spacing:1px;text-transform:uppercase;border-bottom:1px solid #f0e8dc}.mobile-nav a:last-child{border-bottom:0;color:var(--brown)}
- .hero{grid-template-columns:1fr;min-height:auto}.hero-copy{padding:58px 24px 40px}.hero h1{font-size:62px}.hero p{font-size:15px}.hero-photo{min-height:420px}.hero-detail{top:18px;right:18px;width:43%;border-width:5px}.hero-logo{left:18px;bottom:18px;width:60%;min-height:0;padding:12px 9px 10px}.hero-logo .arabic-word{font-size:3rem}.hero-logo .english-word{font-size:2.35rem}.hero-logo .english-word span{font-size:1.8rem;letter-spacing:3px}.hero-logo .arabic-sub{font-size:1.5rem;margin-top:4px}.hero-logo .divider{margin:7px auto 9px}.hero-logo .brand-cta{font-size:9px}
+ .hero{grid-template-columns:1fr;min-height:auto}.hero-copy{padding:58px 24px 40px}.hero h1{font-size:62px}.hero p{font-size:15px}.hero-photo{min-height:420px}.hero-detail-frame{top:18px;right:18px;width:36%;border-width:5px}.hero-logo{left:18px;bottom:18px;width:60%;min-height:0;padding:12px 9px 10px}.hero-logo .arabic-word{font-size:3rem}.hero-logo .english-word{font-size:2.35rem}.hero-logo .english-word span{font-size:1.8rem;letter-spacing:3px}.hero-logo .arabic-sub{font-size:1.5rem;margin-top:4px}.hero-logo .divider{margin:7px auto 9px}.hero-logo .brand-cta{font-size:9px}
  .section{padding:60px 20px}.section h2{font-size:45px}.products{grid-template-columns:1fr;gap:16px}.card-image{height:260px}.card-body{padding:19px}
  .contact-grid{grid-template-columns:1fr}.quote p{font-size:29px}.order-actions{flex-direction:column;align-items:stretch;max-width:320px;margin:0 auto}.order-actions .btn{width:100%}
 }
@@ -178,7 +179,7 @@ html[dir="rtl"] .hero-logo .english-word{direction:ltr}
   </div>
  </div>
  <div class="hero-photo" aria-label="Freshly baked Sukoon Treats cookies">
-  <img class="hero-detail" src="cookie-assortment.jpg" alt="Assorted freshly baked cookies" width="1000" height="914" decoding="async" fetchpriority="high">
+  <div class="hero-detail-frame"><img class="hero-detail" src="cookie-assortment.jpg" alt="Assorted freshly baked cookies" width="1000" height="914" decoding="async" fetchpriority="high"></div>
   <div class="hero-logo">
    <div class="arabic-word">سكون</div>
    <div class="english-word">SUKOON<span>TREATS</span></div>
