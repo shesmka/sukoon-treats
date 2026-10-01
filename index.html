@@ -83,8 +83,7 @@ html[dir="rtl"] .hero-logo .english-word{direction:ltr}
 .brownies .card-image,.tiramisu .card-image{background-image:none;background-color:rgba(168,135,91,.14)}
 .brownies .card-image,.tiramisu .card-image{position:relative;display:flex;align-items:flex-end;padding:22px}
 .brownies .card-image::before,.tiramisu .card-image::before{content:"";position:absolute;inset:0;background:rgba(53,33,23,.1)}
-.shade-title{position:relative;z-index:1;margin:0;color:var(--espresso);font-family:"Cormorant Garamond",serif;font-size:38px;font-weight:500;line-height:1}
-.shade-title strong{font-weight:700}
+.shade-title{position:relative;z-index:1;margin:0;color:var(--espresso);font-family:"Cormorant Garamond",serif;font-size:38px;font-weight:700;line-height:1}
 .card-body{padding:22px 22px 24px}
 .card h3{font-family:"Cormorant Garamond",serif;font-size:27px;line-height:1.05;margin:0 0 10px}
 .card p{font-size:13px;line-height:1.7;color:var(--muted);margin:0}
@@ -257,14 +256,14 @@ html[dir="rtl"] .hero-logo .english-word{direction:ltr}
   </article>
 
   <article class="card brownies">
-    <div class="card-image"><h3 class="shade-title" data-i18n="browniesTitle" data-i18n-html="true"><strong>B</strong>rownies</h3></div>
+    <div class="card-image"><h3 class="shade-title">B</h3></div>
    <div class="card-body">
     <span class="coming-soon" data-i18n="comingSoon">Coming soon</span>
    </div>
   </article>
 
   <article class="card tiramisu">
-    <div class="card-image"><h3 class="shade-title" data-i18n="tiramisuTitle" data-i18n-html="true"><strong>T</strong>iramisu</h3></div>
+    <div class="card-image"><h3 class="shade-title">T</h3></div>
    <div class="card-body">
     <span class="coming-soon" data-i18n="comingSoon">Coming soon</span>
    </div>
@@ -346,7 +345,7 @@ const translations = {
     pistachioTitle: 'ፒስታቺዮ ቸኮሌት ቺፕ ኩኪ', pistachioDescription: 'የፒስታቺዮ እና የቸኮሌት ጣዕም ያለው በሚዛን የተዘጋጀ ኩኪ።',
     specialFourTitle: 'የአራት ጣዕም የኩኪ ሳጥን', specialFourDescription: 'አራቱንም የሱኩን ኩኪ ጣዕሞች የያዘ ልዩ ጥቅል።',
     specialChocolateTitle: 'የቸኮሌት ቁርጥራጭ ኩኪ', specialChocolateDescription: 'በብዙ የቸኮሌት ቁርጥራጮች የተሞላ ኩኪ።',
-    halfKilo: '½ ኪ.ግ', oneKilo: '1 ኪ.ግ', browniesTitle: '<strong>ብ</strong>ራውኒዎች', tiramisuTitle: '<strong>ቲ</strong>ራሚሱ', comingSoon: 'በቅርቡ',
+    halfKilo: '½ ኪ.ግ', oneKilo: '1 ኪ.ግ', comingSoon: 'በቅርቡ',
     quoteLine: '“ትንሽ የጣፋጭነት ጊዜ።”', contactKicker: 'ያግኙን', contactHeading: 'ከእኛ ጋር ይገናኙ',
     contactIntro: 'ለትዕዛዝ፣ ለጥያቄ እና ለቅድመ ትዕዛዝ ይደውሉ ወይም መልዕክት ይላኩ።', phoneLabel: 'ስልክ',
     telegramLabel: 'ቴሌግራም', instagramLabel: 'ኢንስታግራም', tiktokLabel: 'ቲክቶክ',
@@ -369,7 +368,7 @@ const translations = {
     pistachioTitle: 'كوكيز الفستق والشوكولاتة', pistachioDescription: 'توازن أنيق بين الفستق الغني والشوكولاتة.',
     specialFourTitle: 'باقة كوكيز بأربع نكهات', specialFourDescription: 'علبة مميزة تضم نكهات الكوكيز الأربع المميزة.',
     specialChocolateTitle: 'كوكيز بقطع الشوكولاتة', specialChocolateDescription: 'كوكيز غني بالشوكولاتة مع قطع إضافية.',
-    halfKilo: 'نصف كيلو', oneKilo: 'كيلو واحد', browniesTitle: '<strong>ب</strong>راونيز', tiramisuTitle: '<strong>ت</strong>يراميسو', comingSoon: 'قريباً',
+    halfKilo: 'نصف كيلو', oneKilo: 'كيلو واحد', comingSoon: 'قريباً',
     quoteLine: '“لحظة صغيرة من الحلاوة.”', contactKicker: 'تواصل معنا', contactHeading: 'يسعدنا تواصلكم معنا',
     contactIntro: 'اتصلوا أو راسلوا سكون للطلبات والاستفسارات والطلبات المسبقة.', phoneLabel: 'الهاتف',
     telegramLabel: 'تيليغرام', instagramLabel: 'إنستغرام', tiktokLabel: 'تيك توك',
